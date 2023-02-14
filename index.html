@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin:0 auto;
+            padding:0px;
+        }
+        .box{
+            margin:0 auto;
+            width:800px;
+            /* height:1000px; */
+            background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);   
+            border-radius: 30px;
+            padding:0px;
+            
+        }
+        .word{
+            font-size:20px;
+            text-align: center;
+            padding:50px 0px 0px  0px;
+            color:white
+        }
+        .word2{
+            font-size:40px;
+            text-align: center;   
+            color:white;
+        }
+        .photo{
+            position:relative;
+            left:35%;
+            
+            margin-bottom: 30px;
+            
+        }
+        button{
+            width:150px;
+            height:40px;
+            
+            background-color: #fad0c4;
+            border-radius: 3px;
+            
+        }
+        .ai{
+            margin:0px 100px 0px 150px;
+            background-color: rgb(38, 168, 97);
+            border-color: rgb(38, 168, 97);
+        }
+        .buai{
+            margin:0px 100px 0px 100px;
+            background-color: rgb(46, 64, 223);
+            border-color: rgb(46, 64, 223);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="up"></div>
+        <p class="word">我观察你很久了</p>
+        <p class="word2">小姐姐爱不爱我</p>
+        <div class="photo"><img src="./3.jpeg" alt=""></div>
+        <div class="down">
+            <button class="ai" id="ye">爱</button>
+            <button class="buai" id="no">不爱</button>
+            <div class="photo" style="margin-top:100px;"><img src="./4.jpeg" alt=""></div>
+        </div>
+    </div>
+    
+    <script>
+        var Dianji=0;
+window.onload=function(){
+	var yes = document.getElementById("ye");
+	var no = document.getElementById("no");
+	no.onclick=function(){
+		Dianji++;
+		if(Dianji==1){
+	   			alert("能够遇见你");
+	   }else if(Dianji==2){
+		   		alert("对我来说是最大的幸福!");
+		   		
+	   }else if(Dianji==3){
+		   		alert("有了你，我的生活变的无限宽广!");
+		   		
+	   }else if(Dianji==4){
+		   		alert("有了你，世界变得如此迷人!");
+		   		
+	  }else if(Dianji==5){
+		   		alert("你是世界，世界是你!");
+	  }else if(Dianji==6){
+		   		alert("我愿意用自己的心，好好的陪着你，爱着你。");
+	  }else if(Dianji==7){
+		   		alert("你考虑一下呗");
+		  		Dianji=1;
+	  }
+
+	}
+	yes.onclick=function(){
+		alert("❤❤❤ 知道啦，我爱你 ❤❤❤");
+	}
+	
+
+}
+
+        
+       
+        
+        
+    </script>
+</body>
+</html>
